@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>
+      AlertManager
+    </title>
+</head>
+<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div>
+    <h1 class="main-header">Welcome to Alert Manager web UI</h1>
+  </div>
+    <form id="myForm" method="post">
+    <div>
+        <label for="servicename">Service Name :</label>
+        <input type="text" id="servicename" name="servicename" value=""><br><br>
+        <label for="serviceowner">Service Owner Name :</label>
+        <input type="text" id="serviceowner" name="serviceowner" value=""><br><br>
+        <!-- <label for="clustername">Cluster Name :</label>
+        <select id="clustername" name="clustername">
+            <option name="cluster1" value="cluster1">cluster1</option>
+            <option name="cluster2" value="cluster2">cluster2</option>
+            <option name="cluster3" value="cluster3">cluster3</option>
+          </select><br><br> -->
+        <select name="yamlfile">
+            <!-- <option>choose the configurtion file</option> -->
+            <option name="rule" value="rule">rule.yaml</option>
+            <option name="config" value="config">config.yaml</option>
+        </select><br><br>
+        <!-- <label for="namespace">Namespace Name :</label>
+        <input type="text" id="namespace" name="namespace" value=""><br><br> -->
+      </div>
+      
+          <label for="alerttypes">Alert type:</label>
+          <input type="checkbox" id="error" value="error" name="error" onclick="showfield()">
+          <label for="error">error</label>
+          <input type="checkbox" id="latency" value="latency" name="latency" onclick="showfield()">
+          <label for="latency">latency</label>
+          <input type="checkbox" id="tps" value="tps" name="tps" onclick="showfield()">
+          <label for="tps">tps</label><br><br>
+    
+          <!-- <label for="avail">Availability :</label> -->
+      <div class="maincheckbox"> 
+        <div class="checkboxdiv1" id="checkboxerror" style="display: none;">
+          <input type="text" id="Availability" name="Availabilityerror" placeholder="Availability %" value="" ><br><br>
+          <input type="text" id="Dashboard" name="Dashboarderror" placeholder="Dashboard URL" value="" ><br><br>
+          <input type="text" id="Playbook" name="Playbookerror" placeholder="Playbook URL" value="" ><br><br>
+        </div>
+        <div class="checkboxdiv2" id="checkboxlatency" style="display: none;">
+          <input type="text" id="Availability" name="Availabilitylatency" placeholder="Availability %" value="" ><br><br>
+          <input type="text" id="Dashboard" name="Dashboardlatency" placeholder="Dashboard URL" value="" ><br><br>
+          <input type="text" id="Playbook" name="Playbooklatency" placeholder="Playbook URL" value="" ><br><br>
+        </div>
+        <div class="checkboxdiv3" id="checkboxtps" style="display: none;">
+          <input type="text" id="Availability" name="Availabilitytps" placeholder="Availability %" value="" ><br><br>
+          <input type="text" id="Dashboard" name="Dashboardtps" placeholder="Dashboard URL" value="" ><br><br>
+          <input type="text" id="Playbook" name="Playbooktps" placeholder="Playbook URL" value="" ><br><br>
+        </div>
+    </div> 
+        
+          <script src="backend.js"></script>
+          
+        
+        
+        <button type="submit" value="Submit" id="Submitbtn">Submit</button>
+
+      
+      </form>
+      
+
+</body>
+
+
+</html>
