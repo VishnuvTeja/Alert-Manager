@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-header{
+    line-height:56px !important;
+     border-radius:9px;
+    background-color:#9042f5;
+    text-align : center;
+    margin-left:9px !important;
+    margin-right:9px !important;
+    
+  }
+  .sub-header{
+    line-height:56px !important;
+     border-radius:9px;
+    background-color:#b0cbd9;
+    text-align : center;
+    margin-left:18px !important;
+    margin-right:9px !important;
+    
+  }
+  .maincheckbox{
+    height: 102px;
+    width: 170px;
+    border: black;
+    margin-top: 103px;
+  }
+  .checkboxdiv1{
+    background-color: #f46c6c;
+    height: 102px;
+    width: 170px;
+    margin-bottom: 7px;
+
+  }
+  .checkboxdiv2{
+    background-color: #9042f5;
+    height: 102px;
+    width: 170px;
+    margin-top: -115px;
+    margin-bottom: 15px;
+    margin-left: 195px;
+    margin-right: 10px;
+
+  }
+  .checkboxdiv3{
+    background-color: aquamarine;
+    height: 102px;
+    width: 170px;
+    margin-top: -115px;
+    margin-bottom: 10px;
+    margin-left: 391px;
+    margin-right: 10px;
+
+  }
+
+  
